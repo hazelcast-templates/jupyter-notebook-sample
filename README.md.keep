@@ -1,0 +1,26 @@
+# Hazelcast Jupyter Notebook Sample
+
+This project contains a [Jupyter Notebook](https://jupyter.org/) that connects to a Hazelcast cluster using the provided configuration.
+
+## Usage
+
+1. Create a virtual environment:
+   ```
+   python3 -m venv venv
+   ```
+2. Activate the virtual environment (Linux/MacOS)
+   ```
+   source venv/bin/activate
+   ```
+3. Activate the virtual environment (Windows)
+   ```
+   .\venv/Scripts/activate
+   ```
+4. Install the requirements
+   ```
+   pip install -r requirements
+   ```
+5. Start the Jupyter Notebook with the default cluster configuration:
+   ```
+   jupyter notebook
+   ```
