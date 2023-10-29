@@ -33,7 +33,7 @@ def load_config(name="") -> Config:
         config_path = Path(config_name_or_path)
     else:
         config_path = Path("configs", config_name_or_path, "config.json")
-    config_path = {{ .clc_home }} / config_path
+    config_path = home() / config_path
     if not config_path.exists():
         if config_path.suffix == ".json":
             # could not find the json config, try again with the yaml config
@@ -43,6 +43,9 @@ def load_config(name="") -> Config:
         else:
             raise FileNotFoundError(config_path)
     return load_config_from_path(config_path)
+
+def home() -> Path:
+    return Path("{{ .clc_home }}")
 
 
 def load_config_from_path(path: Path) -> Config:
