@@ -7,5 +7,5 @@ This template creates a [Jupyter Notebook](https://jupyter.org/) sample to use a
 Create the project using [Hazelcast CLC](https://docs.hazelcast.com/clc/latest/overview)
 
 ```
-clc -c CONFIG-NAME project create --source yuce jupyter-notebook-sample
+clc -c CONFIG-NAME project create jupyter-notebook-sample
 ```
